@@ -1,3 +1,7 @@
+@font-face{
+	font-family: Avenir;
+	src: url('fonts/AvenirLTStd-Medium.otf');
+}
 
 * {
 	margin:0;
