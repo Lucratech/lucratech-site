@@ -17,13 +17,16 @@ body{
 
 
 nav{
-	width:auto;
-	height:90px;
+    top:0;
+    width:100%;
+    position:fixed;
+	height: 90px;
 	background-color:#00a6ed;
-    
     overflow: hidden;	
 	
+
 }
+
 
 button{
 	background-color:#00a6ed;
@@ -36,6 +39,8 @@ button{
 	width: 104px;
 	visibility:hidden;
 	float:right;
+
+    
 }
 img{
     width:100%;
@@ -138,6 +143,7 @@ footer{
 {
 	nav a{
 		visibility:hidden;
+    
 	}
 	button{
 		float:right;
