@@ -18,13 +18,27 @@ body{
 
 nav{
 	width:auto;
+	height:90px;
 	background-color:#00a6ed;
     
     overflow: hidden;	
+	
 }
 
+button{
+	background-color:#00a6ed;
+	border:none;
+	padding-top:25px;
+	padding-right:20px;
+}
+#menu{
+	height:36px;
+	width: 104px;
+	visibility:hidden;
+	float:right;
+}
 img{
-    width: 100%;
+    width:100%;
 }
 
 nav img
@@ -69,14 +83,7 @@ nav a:hover{
 	color: lightgrey;
 }
 
-#banner{
-	height:800px;
-	width:100%;
-	background-image:url(../images/container.jpg);
-	background-position:center top;
-	background-repeat:no-repeat;
-	background-size:cover;	
-}
+
 
  .size{
 	
@@ -129,9 +136,19 @@ footer{
 
 @media only screen and (max-width:1282px)
 {
-	nav{
-		background-color:red;
+	nav a{
+		visibility:hidden;
 	}
+	button{
+		float:right;
+	}
+	#menu {
+	height:36px;
+	width: 104px;
+	visibility:visible;
+	
+	
+}
 }
 
 
