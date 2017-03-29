@@ -17,16 +17,13 @@ body{
 
 
 nav{
-    top:0;
-    width:100%;
-    position:fixed;
-	height: 90px;
+	width:auto;
+	height:90px;
 	background-color:#00a6ed;
+    
     overflow: hidden;	
 	
-
 }
-
 
 button{
 	background-color:#00a6ed;
@@ -34,13 +31,13 @@ button{
 	padding-top:25px;
 	padding-right:20px;
 }
+
+
 #menu{
 	height:36px;
 	width: 104px;
 	visibility:hidden;
 	float:right;
-
-    
 }
 img{
     width:100%;
@@ -62,14 +59,9 @@ li {
 }
 
 
-#aboutUs{
-    padding: 10px;
-    padding-left: 20px;
-}
 
-#services{
-    padding-left: 90px;
-}
+
+
 
 nav a{
 	float:right;
@@ -101,12 +93,19 @@ nav a:hover{
 	padding-left:60px;
 	
 }
+#services{
+	background-image:url('images/SERVICESH.jpg');
+}
 
-
-#main li{
+.main li{
     display:inline;
 	
 }
+.sub_main{
+		 
+		display:none;
+	 }
+	 
 footer{
 	width:auto;
 	height:auto;
@@ -130,6 +129,7 @@ footer{
 	background-color:white;	
 }
 
+
 #aboutUsbanner{
 	height:410px;
 	width:auto;
@@ -138,12 +138,10 @@ footer{
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-
 @media only screen and (max-width:1282px)
 {
 	nav a{
 		visibility:hidden;
-    
 	}
 	button{
 		float:right;
@@ -152,9 +150,21 @@ footer{
 	height:36px;
 	width: 104px;
 	visibility:visible;
-	
-	
-}
+     }
+	 
+	 .main img
+	 {
+		
+		 display:none;
+	 }
+	 .sub_main{
+		 
+		 display:block;
+		 width:100%;
+		 
+	 }
+	 
+	 
 }
 
 
