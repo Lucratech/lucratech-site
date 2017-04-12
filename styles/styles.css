@@ -7,6 +7,11 @@
 	margin:0;
 	padding:0;
 }
+/* Stretches images to the edge of mobile devices that have small screens */
+html,body
+{
+    overflow-x: hidden; 
+}
 
 body{
   background-color:white;
@@ -139,7 +144,8 @@ footer{
 	background-size:cover;
 }
 @media only screen and (max-width:1282px)
-{
+{	
+	
 	nav a{
 		visibility:hidden;
 	}
@@ -163,8 +169,20 @@ footer{
 		 width:100%;
 		 
 	 }
-	 
-	 
+	 /* For phones smaller than the iphone 6 plus */
+	@media only screen and ( max-width: 414px ) {
+		nav {
+			height: 60px;
+		}
+		nav img {
+			height: 60px;
+			width: 60px;
+		}
+		#menu {
+			height:24px;
+			width: 67px;
+		}
+	}
 }
 
 
