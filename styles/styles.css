@@ -7,11 +7,6 @@
 	margin:0;
 	padding:0;
 }
-/* Stretches images to the edge of mobile devices that have small screens */
-html,body
-{
-    overflow-x: hidden; 
-}
 
 body{
   background-color:white;
@@ -22,12 +17,17 @@ body{
 
 
 nav{
-	width:auto;
-	height:90px;
+    top:0;
+    width:100%;
+    position:fixed;
+	height: 90px;
 	background-color:#00a6ed;
-
     overflow: hidden;	
+    
+}
 
+#portfolio{
+    
 }
 
 table {
@@ -42,12 +42,12 @@ td{
     padding: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
-
+    
 }
 
 td:hover{
     background-color: #00a6ed;
-
+    
 }
 
 button{
@@ -56,13 +56,13 @@ button{
 	padding-top:25px;
 	padding-right:20px;
 }
-
-
 #menu{
 	height:36px;
 	width: 104px;
 	visibility:hidden;
 	float:right;
+
+    
 }
 img{
     width:100%;
@@ -83,15 +83,25 @@ li {
     list-style-type: none;
 }
 
+
+#aboutUs{
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#services{
+    padding-left: 90px;
+}
+
 nav a{
 	float:right;
-
+	
 	color:white;
 	font-family: Avenir;
 	font-size: 25px;
 	font-weight:bold;
 	padding: 30px;
-
+	
 
 	text-decoration: none;
 }
@@ -103,7 +113,7 @@ nav a:hover{
 
 
  .size{
-
+	
 	font-size:56px;
 	color:#00a6ed;
 	font-weight:bold;
@@ -111,20 +121,19 @@ nav a:hover{
 
 #space{
 	padding-left:60px;
-
-}
-#services{
-	background-image:url('images/SERVICESH.jpg');
+	
 }
 
-.main li{
+
+#main li{
     display:inline;
-
+	
 }
-.sub_main{
 
+.sub_main{
+		 
 		display:none;
-	 }
+}
 
 footer{
 	width:auto;
@@ -138,7 +147,7 @@ footer{
 }
 
 #bottom_bar li{
-
+	
 	display: inline-block;
     padding: 125px;
 }
@@ -149,7 +158,6 @@ footer{
 	background-color:white;	
 }
 
-
 #aboutUsbanner{
 	height:410px;
 	width:auto;
@@ -159,44 +167,37 @@ footer{
 	background-size:cover;
 }
 
-#myDropdown {
-	display: none;
-}
-
 @media only screen and (max-width:1282px)
-{	
-	#myDropdown {
-	display: visible;
-}
+{
+
 	nav a{
 		visibility:hidden;
+    
 	}
 	button{
 		float:right;
 	}
 	#menu {
-	height:36px;
-	width: 104px;
-	visibility:visible;
-     }
-
-	 .main img
+		height:36px;
+		width: 104px;
+		visibility:visible;
+	}
+	.main img
 	 {
-
-		 display:none;
+		display:none;
 	 }
 	 .sub_main{
-
+		 
 		 display:block;
 		 width:100%;
-
+		 
 	 }
-	  .container {
-
+    .container {
+ 
     cursor: pointer;
     float: right;
     padding-right: 60px;
-
+        
 }
 
 .bar1, .bar2, .bar3 {
@@ -233,11 +234,11 @@ footer{
     border: none;
     cursor: pointer;
 }
-
+    
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-
+    
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -273,22 +274,4 @@ footer{
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-	 /* For phones smaller than the iphone 6 plus */
-	@media only screen and ( max-width: 414px ) {
-		nav {
-			height: 60px;
-		}
-		nav img {
-			height: 60px;
-			width: 60px;
-		}
-		#menu {
-			height:24px;
-			width: 67px;
-		}
-	}
 }
-
-
-
-	
