@@ -4,13 +4,12 @@ function myFunction(x) {
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function buttonfcn(x) {
+function buttonfcn() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
+x.classList.toggle("change");
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-     x.classList.toggle("change");
   if (!event.target.matches('.dropbtn')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -23,3 +22,19 @@ window.onclick = function(event) {
     }
   }
 }
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
