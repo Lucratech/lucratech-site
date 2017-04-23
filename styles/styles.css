@@ -193,7 +193,6 @@ footer{
 		 
 	 }
     .container {
- 
     cursor: pointer;
     float: right;
     position: fixed;
@@ -253,10 +252,11 @@ footer{
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     margin-top: 80px;
     background-color: #f9f9f9;
-    min-width: 100%;
+    width:auto;
+    min-width: 110%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
