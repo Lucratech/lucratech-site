@@ -1,0 +1,64 @@
+@font-face{
+	font-family: Avenir;
+	src: url('../fonts/AvenirLTStd-Medium.otf');
+}
+
+body{
+  background-color:white;
+  color:white;
+  margin:0;
+  font-family:Avenir;
+}
+
+footer {
+	padding: 20px;
+	background-color: #383838;
+	/* Keeps floating child elements inside the parent. */
+	overflow: hidden;
+}
+
+footer .foot-container {
+	/* Dynamic sizing using CSS tables */
+	width: 100%;
+	height: 80px;
+	display: table;
+	border-collapse: collapse;
+}
+
+footer .foot-el {
+	padding: 20px;
+	text-align: center;
+	width: 250px;
+	max-width: 250px;
+
+	/* Dynamic sizing using CSS tables */
+	display: table-cell;
+	/*vertical-align: middle;*/
+	/*border: 1px solid red;*/
+}
+
+footer ul {
+	list-style: none;
+	padding-left: 0; 
+}
+
+footer hr {
+	border: 1px solid #000;
+}
+
+footer #copyright {
+	text-align: center;
+	color: #898989;
+}
+
+@media only screen and (max-width:1282px)
+{
+	footer {
+		text-align: center;
+	}
+	footer .foot-el {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
