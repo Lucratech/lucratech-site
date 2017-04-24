@@ -30,7 +30,6 @@ footer .foot-container {
 }
 
 footer .foot_el {
-	float: left;
 	padding: 20px;
 	text-align: center;
 	
@@ -39,18 +38,20 @@ footer .foot_el {
 
 	/* Dynamic sizing using CSS tables */
 	display: table-cell;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	/*border: 1px solid red;*/
 }
 
 footer ul {
 	list-style: none;
 	padding-left: 0;
-} 
-hr {
+}
+
+footer hr {
 	border: 1px solid #000;
 }
 
-footer span {
+footer #copyright {
+	text-align: center;
 	color: #898989;
 }
