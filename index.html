@@ -8,8 +8,13 @@
 <script type="text/javascript" src="styles/style.js"></script>
  <meta name="viewport" content="width=device-width" initial-scale="1.0">
 </head>
+    <a id="Home"></a>  
+    <a id="services"></a>
+    <a id="about"></a>
+     <a id="contact"></a>
+      
 <body>
-    
+    <header class = "nav">
   <nav>
   <img src="images/logo%20white.png" alt="logo"/>
 	  	<a href="#contact">CONTACT US</a>
@@ -18,6 +23,7 @@
     	<a href="#services">SERVICES</a>
 		<a href="#Home">HOME</a>
   </nav>
+    
   <div class="dropdown">
   <button onclick="buttonfcn()" class="dropbtn"><div class="container" onclick="myFunction(this)">
             <div class="bar1"></div>
@@ -25,25 +31,37 @@
             <div class="bar3"></div>
       </div>
       </button>
+      
   <div id="myDropdown" class="dropdown-content">
-      <a href="#Home">HOME</a>
-        <a href ="#services_mobile">SERVICES</a>
+      <a href="#Home.mobile">HOME</a>
+        <a  href ="#services_mobile">SERVICES</a>
         <a href="portfolio.html">PORTFOLIO</a>
     	<a href="#about_mobile">ABOUT US</a>
 		<a href="#contact_mobile">CONTACT US</a>
   </div>
 </div>
-  <a name="Home"><img src="images/container.jpg" width="100%"/></a>
-  <a name=""></a>   
-   <section class="main">
-    <a name="services"><img id="services" src="images/SERVICESH.jpg"/></a>
-  
-    <a name="about"><img id="about" src="images/aboutus.jpg"/></a>
-	
-    <a name="contact"><img id="contact" src="images/contact.jpg"/></a> 
-	
+    </header>
+    <section id="mainiac">
+    <article class="panel" id="Home">
+       <img src="images/container.jpg">
+       </article>
+   
+    <article class="panel" id="services">
+        <img src="images/SERVICESH.jpg"/>
+       </article>
+   
+     <article class="panel" id="about">
+        <img src = "images/aboutus.jpg"/>/>
+       </article>
 
-  </section>
+        <article class="panel" id="contact">
+        <img src = "images/contact.jpg"/>/>
+       </article>
+    
+         </section>
+   
+
+
   <section class="sub_main">
    <a name="services_mobile">
     <img id= "headings" src="images/heading/ourservices.jpg"></a> 
@@ -95,6 +113,7 @@
 
 </footer>
     </section>-->
+    
      </footer>
     </section>
     </body>
