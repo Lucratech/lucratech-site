@@ -5,62 +5,129 @@
     Sample 
  </title>
  <link rel="stylesheet" href="styles/styles.css">
+<script type="text/javascript" src="styles/style.js"></script>
+ <meta name="viewport" content="width=device-width" initial-scale="1.0">
 </head>
 <body>
- <header>
-  
+    
   <nav>
   <img src="images/logo%20white.png" alt="logo"/>
-    <ul id = "navi">
-	  <li>HOME</li>
-        <li>SERVICES</li>
-         <li>PORTFOLIO</li>
-        <a href = "about_us.html"><li>ABOUT US</li></a>
-	  <li>CONTACT US</li>
-	 
-	</ul>
+	  	<a href="#contact">CONTACT US</a>
+        <a href = "#about">ABOUT US</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+    	<a href="#services">SERVICES</a>
+		<a href="#Home">HOME</a>
   </nav>
-  <section id="banner"></section>
- </header>
- <section id="main">
+  <div class="dropdown">
+  <button onclick="buttonfcn()" class="dropbtn"><div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+      </div>
+      </button>
+  <div id="myDropdown" class="dropdown-content">
+      <a href="#Home">HOME</a>
+        <a href ="#services_mobile">SERVICES</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+    	<a href="#about_mobile">ABOUT US</a>
+		<a href="#contact_mobile">CONTACT US</a>
+  </div>
+</div>
+  <a name="Home"><img src="images/container.jpg" width="100%"/></a>
+  <a name=""></a>   
+   <section class="main">
+    <a name="services"><img id="services" src="images/SERVICESH.jpg"/></a>
+  
+    <a name="about"><img id="about" src="images/aboutus.jpg"/></a>
+	
+    <a name="contact">
+	    <div class="container_main">
+  <form  method="post" action="../send_email.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	
+	
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Type email here...">
+
    
-    <img src = "images/SERVICESH.jpg">
-     <img src="images/aboutus.jpg">
-     <img src = "images/contact.jpg">
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+	
+	</a> 
+	
   <br><br><br><br><br>
-<footer>
-
-  <section id="bottom_bar">
-  
-     <ul>
-      <li>
-		<h3>Our Location</h3>
-		<p></p>
-		<p>York University,Steeles, M3J0C5</p>
-	  </li>
-	<li>
-	<h3>Opening Hours</h3>
-	<p></p>
-	<p>24hrs</p>
-	</li>
-	<li>
-	<h3>Phone and Email Address</h3>
-	
-	<p></p>
-	<p>416-xxx-xxxx, lucratech@hotmail.com</p>
-	
-	</li>
-	
-    <hr>
-	<div class="linespace"></div>
-  </ul>
- 
-  
   </section>
-  
+  <section class="sub_main">
+   <a name="services_mobile">
+    <img id= "headings" src="images/heading/ourservices.jpg"></a> 
+    <img src="images/webDev.png"/>
+	<img src="images/appdev.png"/>
+	<img src="images/socialmark.png"/>
+	<br><br><br><br><br>
+    <a name="about_mobile"><img id= "headings" src="images/heading/aboutus.jpg"></a> 
+    <img src="images/ourStory.png"/>
+	<img src="images/ourMission.png"/>
+	<img src="images/nameMeaning.png"/>
+	<br><br><br><br><br>
+	  <div class="container_">
+  <form  method="post" action="../send_email.php">
 
-</footer>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-</body>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	
+	
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Type email here...">
 
+   
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</div>
+	
+	
+	</section>
+
+		<footer>
+			<h2>Need a website? Get a quote today.</h2>
+			<div class="foot-container">
+	    		<div class="foot-el">
+					<h3>Call us now!</h3>
+					<ul>
+						<li>(647)760-9980</li>
+						<li>(647)540-2363</li>
+						<li>(647)997-8304</li>
+					</ul>
+			  	</div>
+				<div class="foot-el">
+					<h3>Email us!</h3>
+					<p>lucratechsolutions@gmail.com</p>
+				</div>
+				<div class="foot-el">
+					<h3>Follow us</h3>
+				</div>
+			</div>
+		    <hr>
+			<div id="copyright">
+				<span>&copy; Lucratech Solutions. All rights reserved.</span>
+			</div>
+		</footer>
+    </body>
 </html>

@@ -1,3 +1,7 @@
+@font-face{
+	font-family: Avenir;
+	src: url('../fonts/AvenirLTStd-Medium.otf');
+}
 
 * {
 	margin:0;
@@ -9,42 +13,70 @@ body{
   color:white;
   margin:0;
   font-family:Avenir;
-  
-  
 }
 
 
 nav{
-	width:100%;
-	height:90px;
+    top:0;
+    width:100%;
+    position:fixed;
+	height: 90px;
 	background-color:#00a6ed;
-    position: fixed;
-   
-
-	
+    overflow: hidden;	
+    
 }
 
+#portfolio{
+    
+}
+
+table {
+
+    padding: 60px;
+    align-content: center;
+    table-layout:fixed;
+}
+
+td{
+    width: 500px;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+td:hover{
+    background-color: #00a6ed;
+    
+}
+
+button{
+	background-color:#00a6ed;
+	border:none;
+	padding-top:25px;
+	padding-right:20px;
+}
+#menu{
+	height:36px;
+	width: 104px;
+	visibility:hidden;
+	float:right;
+
+    
+}
 img{
-
-    width: 100%;
+    width:100%;
 }
 
-#navi{
-    padding-left: 480px;
-}
 nav img
 {
 	float:left;
 	width:90px;
 	height:90px;
-	padding-left:30px;
+	padding-left:70px;
 	/*
 	padding-top:13px;
 	*/
-}
-li {
-    padding-left: 90px;
-    list-style-type: none;
 }
 
 
@@ -54,43 +86,27 @@ li {
 }
 
 #services{
-    padding-left: 90px;
+   
 }
 
-
-nav li{
-	/*
-	background-color: grey;
-	*/
-	float:left;
-	padding:32px;
+nav a{
+	float:right;
 	
-    
-
 	color:white;
 	font-family: Avenir;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight:bold;
-}
+	padding: 30px;
+	
 
-nav a:hover{
-	color: #00A6ED;
-}
-nav li a{
-	color: black;
 	text-decoration: none;
 }
 
-#banner{
-	height:800px;
-	width:100%;
-	background-image:url(../images/container.jpg);
-	background-position:center top;
-	background-repeat:no-repeat;
-	background-size:cover;
-    
-	
+nav a:hover{
+	color: lightgrey;
 }
+
+
 
  .size{
 	
@@ -109,19 +125,57 @@ nav li a{
     display:inline;
 	
 }
-footer{
-	width:auto;
-	height:auto;
-	font-size:14pt;
-	
-	
+
+.sub_main{
+		 
+		display:none;
 }
+
+footer {
+	padding: 20px;
+	background-color: #383838;
+	/* Keeps floating child elements inside the parent. */
+	overflow: hidden;
+}
+
+footer .foot-container {
+	/* Dynamic sizing using CSS tables */
+	width: 100%;
+	height: 80px;
+	display: table;
+	border-collapse: collapse;
+}
+
+footer .foot-el {
+	padding: 20px;
+	text-align: center;
+	width: 250px;
+	max-width: 250px;
+
+	/* Dynamic sizing using CSS tables */
+	display: table-cell;
+	/*vertical-align: middle;*/
+	/*border: 1px solid red;*/
+}
+
+footer ul {
+	list-style: none;
+	padding-left: 0; 
+}
+
+footer hr {
+	border: 1px solid #000;
+}
+
+footer #copyright {
+	text-align: center;
+	color: #898989;
+}
+
 
 #bottom_bar{
 	background-color:#323137;
-	color:white;
-	
-	
+	color:white;	
 }
 
 #bottom_bar li{
@@ -145,5 +199,175 @@ footer{
 	background-size:cover;
 }
 
+/* For smaller screens */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea,label {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+	
+}
 
 
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color:#323137;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-family:Avenir;
+	color:white;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Add a background color and some padding around the form */
+.container_{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	color:black;
+}
+.container_main{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	color:black;
+}
+
+@media only screen and (max-width:1282px)
+{
+	nav a{
+		visibility:hidden;
+    
+	}
+	button{
+		float:right;
+	}
+	#menu {
+		height:36px;
+		width: 104px;
+		visibility:visible;
+	}
+	.main img
+	 {
+		display:none;
+	 }
+	 .sub_main{
+		 
+		 display:block;
+		 width:100%;
+		 
+	 }
+	 .container_main{
+		 display:none;
+		 
+	 }
+		 
+    .container {
+	    cursor: pointer;
+	    float: right;
+	    position: fixed;
+        
+	}
+
+	.bar1, .bar2, .bar3 {
+	    width: 35px;
+	    height: 5px;
+	    background-color: white;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+
+	/* Rotate first bar */
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	    transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	    opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	    transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+
+	/* Dropdown Button */
+	.dropbtn {
+
+	    color: white;
+	    padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+	}
+	    
+
+	/* Dropdown button on hover & focus */
+	.dropbtn:hover, .dropbtn:focus {
+	    
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	    position: relative;
+	    float: right;
+	    padding-right: 30px;
+	    padding-top: 9px;
+	    width: 100%;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	    display: none;
+	    position: fixed;
+	    margin-top: 80px;
+	    background-color: #f9f9f9;
+	    width:auto;
+	    min-width: 110%;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: center;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {display:block;}
+
+	footer {
+		text-align: center;
+	}
+	footer .foot-el {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+#headings{
+    width: 200px;
+}
